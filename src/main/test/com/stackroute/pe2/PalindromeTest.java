@@ -7,17 +7,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PalindromeTest {
-    Palindrome reverse;
+    PalindromeChecker reverse;
     @Before
     public  void setUp()
     {
-        System.out.println("Before");
-        reverse=new Palindrome();
+
+        reverse=new PalindromeChecker();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         reverse=null;
     }
     @Test
@@ -39,10 +39,10 @@ public class PalindromeTest {
     @Test
     public void givenEmptyStringShouldReturnAsError()
     {
-//        act
+//        ac
         String result=reverse.palindrome("");
 //        assert
-        assertEquals("Error",result);
+        assertEquals("Empty String",result);
     }
 
 }

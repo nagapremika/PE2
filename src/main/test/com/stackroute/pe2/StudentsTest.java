@@ -7,17 +7,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class StudentsTest {
-    Students student;
+    Student student;
     @Before
     public  void setUp()
     {
-        System.out.println("Before");
-        student=new Students();
+
+        student=new Student();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         student=null;
     }
     @Test

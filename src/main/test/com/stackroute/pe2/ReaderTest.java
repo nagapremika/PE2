@@ -14,13 +14,13 @@ public class ReaderTest {
     @Before
     public  void setUp()
     {
-        System.out.println("Before");
+
         read=new Reader();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         read=null;
     }
     @Test

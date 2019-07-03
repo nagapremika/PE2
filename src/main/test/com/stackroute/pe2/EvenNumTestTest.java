@@ -7,34 +7,34 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class EvenNumTestTest {
-    EvenNumTest even;
+    EvenNumTester even;
     @Before
     public  void setUp()
     {
-        System.out.println("Before");
-        even=new EvenNumTest();
+
+        even=new EvenNumTester();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         even=null;
     }
     @Test
     public void givenNumberShouldReturnEvenNumber()
     {
 //        act
-        boolean result=even.isEven(23432);
+
 //        assert
-        assertEquals(true,result);
+        assertTrue(even.isEven(23432));
     }
     @Test
     public void givenOneNumberShouldReturnNotEven()
     {
 //        act
-        boolean result=even.isEven(343);
+
 //        assert
-        assertEquals(false,result);
+        assertFalse(even.isEven(343));
     }
 
 }

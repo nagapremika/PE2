@@ -11,13 +11,13 @@ public class PowerTest {
     @Before
     public  void setUp()
     {
-        System.out.println("Before");
+
         four=new Power();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         four=null;
     }
     @Test
@@ -42,7 +42,7 @@ public class PowerTest {
 //        act
         String result=four.power(-16);
 //        assert
-        assertEquals("Given number is a power of 4",result);
+        assertEquals("input not allowed",result);
     }
 
 

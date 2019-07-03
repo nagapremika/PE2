@@ -11,13 +11,13 @@ public class FactorialTest {
     @Before
     public  void setUp()
     {
-        System.out.println("Before");
+
         number=new Factorial();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         number=null;
     }
     @Test
@@ -40,9 +40,16 @@ public class FactorialTest {
     public void givenNegativeIntegerShouldReturnError()
     {
 //        act
+        String result=number.factorial(0);
+//        assert
+        assertEquals("Number not accepted",result);
+    }
+    @Test
+    public void givenZeroIntegerShouldReturnError()
+    {
+//        act
         String result=number.factorial(-3);
 //        assert
-        assertEquals("Error",result);
+        assertEquals("Number not accepted",result);
     }
-
 }
